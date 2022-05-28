@@ -1,0 +1,20 @@
+# kkkkkkku
+study
+<script type="text/javascript">
+			window.onload = function() {
+				var img1 = document.getElementById("img1");
+				var arr = ["img/a5.png", "img/a2.png", "img/bg3.jpg"]; //图片路径
+				var num = 1;
+				setInterval(function() {
+					num++;
+					if (num == arr.length) {
+						num = 0; //重置下标
+					}
+					img1.src = arr[num];
+				}, 1000)
+			}
+		</script>
+    
+    
+    
+    <img id="img1" src="./img/a1.png" width="1500px" height="800px">
